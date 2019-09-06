@@ -6,6 +6,7 @@ import { createStage, checkCollision } from '../gameHelpers';
 import {StyledTetris, StyledTetrisWrapper} from './styles/StyledTetris';
 
 //Custom hooks
+import { useInterval } from '../hooks/useInterval';
 import { usePlayer } from '../hooks/usePlayer';
 import { useStage } from '../hooks/useStage';
 
@@ -19,7 +20,7 @@ const Tetris = () => {
     const [gameOver, setGameOver] = useState(false);
 
     const [player, updatePlayerPos, resetPlayer, playerRotate] = usePlayer();
-    const [stage, setStage] = useStage(player);
+    const [stage, setStage] = useStage(player, resetPlayer);
     
     console.log('re-render');
 

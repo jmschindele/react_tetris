@@ -3,6 +3,11 @@
 
 An application built in react that recreates tetris. Custom React hooks are used to manage state outside of all components.
 
+View Deployed Link:
+https://jmschindele.github.io/react_tetris/
+
+View Tutorial:
+https://www.youtube.com/watch?v=ZGOaCxX8HIU&t=3s
 
 ## Installation
 If you would like to download and use this code you will need to:
